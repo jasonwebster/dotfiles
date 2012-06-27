@@ -1,0 +1,16 @@
+
+if [ -f ~/.aliases ]; then
+  source ~/.aliases
+fi
+
+if [ -f ~/.functions ]; then
+  source ~/.functions
+fi
+
+export EDITOR=vim
+
+
+if [ -d "$HOME/.rbenv/bin" ] ; then 
+  export PATH="$HOME/.rbenv/bin":$PATH
+  eval "$(rbenv init -)"
+fi

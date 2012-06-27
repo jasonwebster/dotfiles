@@ -1,0 +1,8 @@
+
+alias ls="ls -Gp"
+alias la="ls -a"
+alias ll="ls -lh"
+
+alias be="bundle exec"
+alias g="git"
+alias rake="bundle exec rake"
