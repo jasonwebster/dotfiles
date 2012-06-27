@@ -33,7 +33,7 @@ task :update do
 end
 
 desc 'Run all install tasks in order.'
-task :install => [ 'install:deps', 'install:copy', 'install:post' ]
+task :install => %w(install:deps install:copy install:formulae install:npm install:post)
 
 namespace :install do
 
@@ -51,6 +51,27 @@ namespace :install do
   task :copy do
     entries.each do | file |
       FileUtils.cp_r file, File.expand_path( "~/#{file}" ), :verbose => true, :remove_destination => true
+    end
+  end
+
+  desc 'Install required brew formulae'
+  task :formulae do
+    %w(bash-completion git ruby-build node).each do |f|
+      system "brew install #{f}"
+    end
+
+    # link up homebrew bash completion
+    system 'ln -s "/usr/local/Library/Contributions/brew_bash_completion.sh" "/usr/local/etc/bash_completion.d"'
+  end
+
+  desc 'Install required npm packages'
+  task :npm do
+    unless system 'which npm'
+      system 'curl http://npmjs.org/install.sh | sh'
+    end
+
+    %w(n coffee-script stylus).each do |f|
+      system "npm install -g #{f}"
     end
   end
 

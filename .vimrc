@@ -8,6 +8,7 @@ set nowrap
 set nu
 
 syntax on
+set t_Co=256
 filetype plugin on
 
 set tabstop=2
