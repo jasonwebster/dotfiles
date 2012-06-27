@@ -77,6 +77,10 @@ namespace :install do
 
   desc 'Run post-install tasks.'
   task :post do
+    puts 'Installing ruby 1.9.3-p125 via rbenv install'
+    system 'rbenv install 1.9.3-p125'
+    system 'rbenv global 1.9.3-p125'
+
     puts "\n\n\n##################################################"
     puts "Don't forget to edit your git config: ~/.gitconfig"
   end
