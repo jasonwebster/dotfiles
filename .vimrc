@@ -7,9 +7,13 @@ set nowrap
 
 set nu
 
+call pathogen#infect()
 syntax on
+set background=dark
+colorscheme solarized
 set t_Co=256
-filetype plugin on
+
+filetype plugin indent on
 
 set tabstop=2
 set shiftwidth=2
