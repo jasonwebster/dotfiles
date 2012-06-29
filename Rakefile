@@ -33,7 +33,7 @@ task :update do
 end
 
 desc 'Run all install tasks in order.'
-task :install => %w(install:deps install:copy install:formulae install:npm install:post)
+task :install => %w(install:deps install:copy install:post)
 
 namespace :install do
 
@@ -75,12 +75,15 @@ namespace :install do
     end
   end
 
-  desc 'Run post-install tasks.'
-  task :post do
+	desc 'Install ruby'
+  task :ruby do
     puts 'Installing ruby 1.9.3-p125 via rbenv install'
     system 'rbenv install 1.9.3-p125'
     system 'rbenv global 1.9.3-p125'
+	end
 
+  desc 'Run post-install tasks.'
+  task :post do
     puts "\n\n\n##################################################"
     puts "Don't forget to edit your git config: ~/.gitconfig"
   end
