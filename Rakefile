@@ -85,7 +85,7 @@ namespace :install do
   desc 'Run post-install tasks.'
   task :post do
 		puts "Linking ST2 packages"
-		FileUtils.ln_s File.expand_path("~/.sublime_packages"), File.expand_path("~/Library/Application Support/Sublime Text 2/Packages"), :force => true
+		system 'ln -sF ~/.sublime_packages ~/Library/Application\ Support/Sublime\ Text\ 2/Packages'
 
     puts "\n\n\n##################################################"
     puts "Don't forget to edit your git config: ~/.gitconfig"

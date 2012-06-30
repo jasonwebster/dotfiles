@@ -7,9 +7,10 @@
 [submodule ".sublime_packages/CoffeeScript.tmbundle"]
 	path = .sublime_packages/CoffeeScript.tmbundle
 	url = git://github.com/jashkenas/coffee-script-tmbundle
-[submodule ".sublime_packages/Slim.tmbundle"]
-	path = .sublime_packages/Slim.tmbundle
+
+[submodule ".sublime_packages/Ruby-Slim.tmbundle"]
+	path = .sublime_packages/Ruby-Slim.tmbundle
 	url = git://github.com/fredwu/ruby-slim-tmbundle.git
-[submodule ".sublime_packages/Sass-Alternative-Syntax.tmbundle"]
-	path = .sublime_packages/Sass-Alternative-Syntax.tmbundle
+[submodule ".sublime_packages/Ruby-Saas-Alternative-Syntax.tmbundle"]
+	path = .sublime_packages/Ruby-Saas-Alternative-Syntax.tmbundle
 	url = git://github.com/fluxsaas/sass-textmate-bundle.git
