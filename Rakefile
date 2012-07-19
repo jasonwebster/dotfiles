@@ -1,21 +1,15 @@
 require 'fileutils'
 
+# Files and folders which shouldn't be copied over
+$exclude = %w(. .. .git .gitignore Gemfile Gemfile.lock Rakefile README.md)
+
 # Files
 def entries
   @files ||= Dir.entries( File.expand_path( '~/.dotfiles' ) ) - $exclude
 end
 
-# Files and folders which shouldn't be copied over
-$exclude = [
-  '.',
-  '..',
-  '.git',
-  '.gitignore',
-  'Gemfile',
-  'Gemfile.lock',
-  'Rakefile',
-  'README.md'
-]
+
+
 
 desc 'Backup previous dotfiles.'
 task :backup do
@@ -85,7 +79,10 @@ namespace :install do
   desc 'Run post-install tasks.'
   task :post do
 		puts "Linking ST2 packages"
-		system 'ln -sF ~/.sublime_packages ~/Library/Application\ Support/Sublime\ Text\ 2/Packages'
+		package_dir = '~/Library/Application\ Support/Sublime\ Text\ 2/Packages'
+
+		system "rm #{package_dir}"
+		system "ln -sF ~/.sublime_packages #{package_dir}"
 
     puts "\n\n\n##################################################"
     puts "Don't forget to edit your git config: ~/.gitconfig"
