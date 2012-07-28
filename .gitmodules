@@ -20,3 +20,6 @@
 	path = .sublime_packages/ColorHighlighter
 	url = git://github.com/Monnoroch/ColorHighlighter.git
 
+[submodule ".sublime_packages/SublimeLinter"]
+	path = .sublime_packages/SublimeLinter
+	url = git://github.com/SublimeLinter/SublimeLinter.git
