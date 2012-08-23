@@ -7,7 +7,6 @@
 [submodule ".sublime_packages/CoffeeScript.tmbundle"]
 	path = .sublime_packages/CoffeeScript.tmbundle
 	url = git://github.com/jashkenas/coffee-script-tmbundle
-
 [submodule ".sublime_packages/Ruby-Slim.tmbundle"]
 	path = .sublime_packages/Ruby-Slim.tmbundle
 	url = git://github.com/fredwu/ruby-slim-tmbundle.git
@@ -16,7 +15,11 @@
 	url = git://github.com/fluxsaas/sass-textmate-bundle.git
 [submodule ".sublime_packages/textmate-solarized"]
 	path = .sublime_packages/textmate-solarized
-	url = git@github.com:jasonwebster/textmate-solarized.git
+	url = git://github.com/jasonwebster/textmate-solarized.git
 [submodule ".sublime_packages/ColorHighlighter"]
 	path = .sublime_packages/ColorHighlighter
 	url = git://github.com/Monnoroch/ColorHighlighter.git
+
+[submodule ".sublime_packages/SublimeLinter"]
+	path = .sublime_packages/SublimeLinter
+	url = git://github.com/SublimeLinter/SublimeLinter.git
