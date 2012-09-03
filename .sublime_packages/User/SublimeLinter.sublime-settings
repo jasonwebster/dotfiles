@@ -4,5 +4,9 @@
   "sublimelinter_executable_map":
   {
     "ruby": "/Users/jason/.rbenv/shims/ruby"
+  },
+  
+  "jshint_options": {
+    "asi": true
   }
 }
