@@ -23,3 +23,6 @@
 [submodule ".sublime_packages/SublimeLinter"]
 	path = .sublime_packages/SublimeLinter
 	url = git://github.com/SublimeLinter/SublimeLinter.git
+[submodule ".sublime_packages/XMLLint"]
+	path = .sublime_packages/XMLLint
+	url = git://github.com/unclebilly/xmllint.git
