@@ -12,4 +12,4 @@ complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \ || complet
 [[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
 
 
-export PS1='\u@\h:\W$(__git_ps1 " (%s)") \$ '
+export PS1='\[\e[1;34m\]\u@\h\[\e[0m\]:\[\e[1;35m\]\W\[\e[0m\]\[\e[1;33m\]$(__git_ps1 " (%s)") \[\e[0m\]\[\e[1;32m\]\$ \[\e[0m\]'
