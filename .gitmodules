@@ -9,7 +9,7 @@
 	url = git://github.com/jashkenas/coffee-script-tmbundle
 [submodule ".sublime_packages/Ruby-Slim.tmbundle"]
 	path = .sublime_packages/Ruby-Slim.tmbundle
-	url = git://github.com/fredwu/ruby-slim-tmbundle.git
+	url = git://github.com/jasonwebster/ruby-slim-tmbundle.git
 [submodule ".sublime_packages/Ruby-Saas-Alternative-Syntax.tmbundle"]
 	path = .sublime_packages/Ruby-Saas-Alternative-Syntax.tmbundle
 	url = git://github.com/fluxsaas/sass-textmate-bundle.git
