@@ -26,3 +26,6 @@
 [submodule ".sublime_packages/XMLLint"]
 	path = .sublime_packages/XMLLint
 	url = git://github.com/unclebilly/xmllint.git
+[submodule ".sublime_packages/TidyJSON"]
+	path = .sublime_packages/TidyJSON
+	url = git://github.com/chrislongo/TidyJSON.git
