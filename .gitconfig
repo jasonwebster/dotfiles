@@ -10,6 +10,9 @@
   excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes_global
 
+[branch]
+  autosetuprebase = always
+
 [alias]
   br = branch
   ci = commit
