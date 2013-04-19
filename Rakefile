@@ -71,9 +71,9 @@ namespace :install do
 
 	desc 'Install ruby'
   task :ruby do
-    puts 'Installing ruby 1.9.3-p125 via rbenv install'
-    system 'rbenv install 1.9.3-p125'
-    system 'rbenv global 1.9.3-p125'
+    puts 'Installing ruby 2.0.0-p0 via rbenv install'
+    system 'rbenv install 2.0.0-p0'
+    system 'rbenv global 2.0.0-p0'
 	end
 
   desc 'Run post-install tasks.'
