@@ -50,7 +50,7 @@ namespace :install do
 
   desc 'Install required brew formulae'
   task :formulae do
-    %w(bash-completion git ruby-build node).each do |f|
+    %w(bash-completion git ruby-build hub).each do |f|
       system "brew install #{f}"
     end
 
