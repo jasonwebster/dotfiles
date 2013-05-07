@@ -12,7 +12,7 @@
 	url = git://github.com/jasonwebster/ruby-slim-tmbundle.git
 [submodule ".sublime_packages/Ruby-Saas-Alternative-Syntax.tmbundle"]
 	path = .sublime_packages/Ruby-Saas-Alternative-Syntax.tmbundle
-	url = git://github.com/fluxsaas/sass-textmate-bundle.git
+	url = git://github.com/jasonwebster/sass-textmate-bundle.git 
 [submodule ".sublime_packages/textmate-solarized"]
 	path = .sublime_packages/textmate-solarized
 	url = git://github.com/jasonwebster/textmate-solarized.git
