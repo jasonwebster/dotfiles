@@ -29,3 +29,6 @@
 [submodule ".sublime_packages/TidyJSON"]
 	path = .sublime_packages/TidyJSON
 	url = git://github.com/chrislongo/TidyJSON.git
+[submodule ".vim/bundle/vim-coffee-script"]
+	path = .vim/bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
