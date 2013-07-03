@@ -1,3 +1,6 @@
+if [ -f ~/.env ]; then
+  source ~/.env
+fi
 
 if [ -f ~/.aliases ]; then
   source ~/.aliases
