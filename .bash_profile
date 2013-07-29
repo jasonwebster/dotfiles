@@ -1,5 +1,5 @@
 
-export PATH="/usr/local/bin:$HOME/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # homebrew installed completions
 if [ -f `brew --prefix`/etc/bash_completion ]; then
