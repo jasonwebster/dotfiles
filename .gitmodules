@@ -32,3 +32,6 @@
 [submodule ".vim/bundle/vim-coffee-script"]
 	path = .vim/bundle/vim-coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule ".sublime_packages/Haml.tmbundle"]
+	path = .sublime_packages/Haml.tmbundle
+	url = git@github.com:phuibonhoa/handcrafted-haml-textmate-bundle.git
