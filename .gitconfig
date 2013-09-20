@@ -13,6 +13,9 @@
 [branch]
   autosetuprebase = always
 
+[push]
+	default = simple
+
 [alias]
   br = branch
   ci = commit
@@ -20,6 +23,8 @@
   df = diff
   pp = !"git pull && git push"
   st = status
+  whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+  prune-locals = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
 
 [color]
   ui = auto
@@ -64,6 +69,6 @@
 
 [url "git@heroku.com:"]
   insteadOf = "heroku:"
-  
+
 [diff "exif"]
   textconv = exiftool
