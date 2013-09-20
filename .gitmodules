@@ -35,3 +35,6 @@
 [submodule ".sublime_packages/Haml.tmbundle"]
 	path = .sublime_packages/Haml.tmbundle
 	url = git@github.com:phuibonhoa/handcrafted-haml-textmate-bundle.git
+[submodule ".sublime_packages/Cucumber"]
+	path = .sublime_packages/Cucumber
+	url = git://github.com/drewda/cucumber-sublime2-bundle.git
