@@ -1,24 +1,26 @@
 set nocompatible
 
-set noerrorbells
-set novisualbell
-
-set nowrap
-
-set nu
 
 call pathogen#infect()
-syntax on
-set background=dark
-colorscheme solarized
+
 set t_Co=256
+set background=dark
+syntax on
+colorscheme solarized
 
 filetype plugin indent on
 
-set tabstop=2
-set shiftwidth=2
+set cursorline
 set expandtab
+set noerrorbells
+set novisualbell
+set nowrap
+set nu
+set shiftwidth=2
+set tabstop=2
+
 
 if has("gui_running")
   set guioptions=-t
+  set guifont=Menlo\ Regular:h12
 endif

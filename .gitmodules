@@ -19,7 +19,6 @@
 [submodule ".sublime_packages/ColorHighlighter"]
 	path = .sublime_packages/ColorHighlighter
 	url = git://github.com/Monnoroch/ColorHighlighter.git
-
 [submodule ".sublime_packages/SublimeLinter"]
 	path = .sublime_packages/SublimeLinter
 	url = git://github.com/SublimeLinter/SublimeLinter.git
@@ -29,12 +28,21 @@
 [submodule ".sublime_packages/TidyJSON"]
 	path = .sublime_packages/TidyJSON
 	url = git://github.com/chrislongo/TidyJSON.git
-[submodule ".vim/bundle/vim-coffee-script"]
-	path = .vim/bundle/vim-coffee-script
-	url = git://github.com/kchmck/vim-coffee-script.git
 [submodule ".sublime_packages/Haml.tmbundle"]
 	path = .sublime_packages/Haml.tmbundle
 	url = git@github.com:phuibonhoa/handcrafted-haml-textmate-bundle.git
 [submodule ".sublime_packages/Cucumber"]
 	path = .sublime_packages/Cucumber
 	url = git://github.com/drewda/cucumber-sublime2-bundle.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git
+[submodule ".vim/bundle/css-color.vim"]
+	path = .vim/bundle/css-color.vim
+	url = git@github.com:gf3/vim-css-color.git
+[submodule ".vim/bundle/coffee-script.vim"]
+	path = .vim/bundle/coffee-script.vim
+	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule ".vim/bundle/haml.vim"]
+	path = .vim/bundle/haml.vim
+	url = git@github.com:tpope/vim-haml.git
