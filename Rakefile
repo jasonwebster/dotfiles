@@ -27,7 +27,7 @@ task :update do
 end
 
 desc 'Run all install tasks in order.'
-task :install => %w(install:deps install:copy install:post)
+task :install => %w(install:deps install:formulae install:copy install:post)
 
 namespace :install do
 
