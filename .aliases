@@ -6,8 +6,6 @@ alias ll="ls -lh"
 alias be="bundle exec"
 alias g="git"
 alias rake="bundle exec rake"
-
-alias ann='bundle exec annotate --position='\''before'\'' --exclude tests,fixtures --show-indexes'
-alias prepare='bundle exec rake db:test:prepare'
-alias migrate='rake db:migrate && ann && prepare'
+alias fr="foreman run"
+alias fs="foreman start"
 
