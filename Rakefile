@@ -26,8 +26,11 @@ task :update do
   system 'git pull'
 end
 
-desc 'Run all install tasks in order.'
+desc 'Run basic install tasks in order.'
 task :install => %w(install:deps install:formulae install:copy install:post)
+
+desc 'Run node related install tasks'
+task :node => %w(install:nvm install:npm)
 
 namespace :install do
 
@@ -58,13 +61,18 @@ namespace :install do
     system 'ln -s "/usr/local/Library/Contributions/brew_bash_completion.sh" "/usr/local/etc/bash_completion.d"'
   end
 
+  desc 'Install NVM'
+  task :nvm do
+    system 'curl https://raw.github.com/creationix/nvm/master/install.sh | sh'
+  end
+
   desc 'Install required npm packages'
   task :npm do
     unless system 'which npm'
       system 'curl http://npmjs.org/install.sh | sh'
     end
 
-    %w(n coffee-script stylus).each do |f|
+    %w(grunt-cli coffee-script stylus).each do |f|
       system "npm install -g #{f}"
     end
   end
