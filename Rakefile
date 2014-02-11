@@ -10,7 +10,6 @@ end
 
 
 
-
 desc 'Backup previous dotfiles.'
 task :backup do
   dir = File.expand_path File.join( '~' , '.dotfiles-backup', Time.now.to_i.to_s )
@@ -30,7 +29,7 @@ desc 'Run basic install tasks in order.'
 task :install => %w(install:deps install:formulae install:copy install:post)
 
 desc 'Run node related install tasks'
-task :node => %w(install:nvm install:npm)
+task :node => %w(install:nvm install:npm_packages)
 
 namespace :install do
 
@@ -67,12 +66,8 @@ namespace :install do
   end
 
   desc 'Install required npm packages'
-  task :npm do
-    unless system 'which npm'
-      system 'curl http://npmjs.org/install.sh | sh'
-    end
-
-    %w(grunt-cli coffee-script stylus).each do |f|
+  task :npm_packages do
+    %w(grunt-cli bower coffee-script stylus).each do |f|
       system "npm install -g #{f}"
     end
   end
