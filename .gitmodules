@@ -46,3 +46,6 @@
 [submodule ".sublime_packages/Sass.tmbundle"]
 	path = .sublime_packages/Sass.tmbundle
 	url = git@github.com:jasonwebster/sass-textmate-bundle.git
+[submodule ".sublime_packages/Emmet"]
+	path = .sublime_packages/Emmet
+	url = git@github.com:sergeche/emmet-sublime.git
