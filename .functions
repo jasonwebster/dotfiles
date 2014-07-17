@@ -28,3 +28,9 @@ cjson () {
   fi
 }
 
+# Start a webserver that serves the cwd
+function serve {
+  port="${1:-3000}"
+  ruby -run -e httpd . -p $port
+}
+
