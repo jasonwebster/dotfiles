@@ -49,3 +49,6 @@
 [submodule ".sublime_packages/Emmet"]
 	path = .sublime_packages/Emmet
 	url = git@github.com:sergeche/emmet-sublime.git
+[submodule ".sublime_packages/ReactJS"]
+	path = .sublime_packages/ReactJS
+	url = git@github.com:reactjs/sublime-react.git
