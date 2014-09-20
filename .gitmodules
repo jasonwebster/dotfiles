@@ -55,3 +55,9 @@
 [submodule ".vim/bundle/elixir.vim"]
 	path = .vim/bundle/elixir.vim
 	url = git@github.com:elixir-lang/vim-elixir.git
+[submodule ".vim/bundle/javascript.vim"]
+	path = .vim/bundle/javascript.vim
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule ".vim/bundle/jsx.vim"]
+	path = .vim/bundle/jsx.vim
+	url = git@github.com:mxw/vim-jsx.git
