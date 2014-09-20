@@ -52,3 +52,6 @@
 [submodule ".sublime_packages/ReactJS"]
 	path = .sublime_packages/ReactJS
 	url = git@github.com:reactjs/sublime-react.git
+[submodule ".vim/bundle/elixir.vim"]
+	path = .vim/bundle/elixir.vim
+	url = git@github.com:elixir-lang/vim-elixir.git
