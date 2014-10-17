@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/better-whitespace.vim"]
 	path = .vim/bundle/better-whitespace.vim
 	url = git@github.com:ntpeters/vim-better-whitespace.git
+[submodule ".sublime_packages/Elixir.tmbundle"]
+	path = .sublime_packages/Elixir.tmbundle
+	url = git@github.com:elixir-lang/elixir-tmbundle.git
