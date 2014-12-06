@@ -4,7 +4,6 @@
 
 [github]
   user = jasonwebster
-  token = TOKEN
 
 [core]
   excludesfile = ~/.gitignore_global
@@ -13,6 +12,15 @@
 [branch]
   autosetuprebase = always
 
+[push]
+  default = simple
+
+[merge]
+  log = true
+
+[rerere]
+  enabled = 1
+
 [alias]
   br = branch
   ci = commit
@@ -20,6 +28,8 @@
   df = diff
   pp = !"git pull && git push"
   st = status
+  ls = log --oneline
+  ll = log --oneline --graph
   whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
   prune-locals = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
   topic-log = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
@@ -45,12 +55,6 @@
   changed = green
   untracked = cyan
 
-[merge]
-  log = true
-
-[rerere]
-  enabled = 1
-
 [url "git@github.com:"]
   insteadOf = "gh:"
   pushInsteadOf = "github:"
@@ -72,5 +76,3 @@
 
 [diff "exif"]
   textconv = exiftool
-[push]
-	default = simple
