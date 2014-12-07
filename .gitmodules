@@ -73,3 +73,6 @@
 [submodule ".vim/bundle/nerdtree.vim"]
 	path = .vim/bundle/nerdtree.vim
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule ".vim/bundle/ack.vim"]
+	path = .vim/bundle/ack.vim
+	url = git@github.com:mileszs/ack.vim.git
