@@ -1,7 +1,7 @@
 require 'fileutils'
 
 # Files and folders which shouldn't be copied over
-$exclude = %w(. .. .git .gitignore Gemfile Gemfile.lock Rakefile README.md .sublime_packages)
+$exclude = %w(. .. .git .gitignore Gemfile Gemfile.lock Rakefile README.md)
 
 # Files
 def entries
@@ -81,14 +81,6 @@ namespace :install do
 
   desc 'Run post-install tasks.'
   task :post do
-		puts "Linking ST2 packages"
-
-		package_source = '~/.dotfiles/.sublime_packages'
-		package_target = '~/Library/Application\ Support/Sublime\ Text\ 2/Packages'
-
-		system "rm #{package_target}"
-		system "ln -sF #{package_source} #{package_target}"
-
     puts "\n\n\n##################################################"
     puts "Don't forget to edit your git config: ~/.gitconfig"
   end
