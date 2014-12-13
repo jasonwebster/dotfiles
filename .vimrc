@@ -12,6 +12,8 @@ colorscheme solarized
 
 filetype plugin indent on
 
+" reload files changed outside vim automatically (switching branches, etc)
+set autoread
 set backspace=2
 set cursorline
 set nobackup
