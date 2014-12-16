@@ -41,6 +41,18 @@ au BufRead,BufNewFile *.md,*.markdown setlocal textwidth=80 wrap filetype=markdo
 " display extra whitespace
 set list listchars=tab:»·,trail:·
 
+" the silver searcher
+if executable('ag')
+  " use ag instead of grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " use ag in ctrlp for listing files. will respect .gitignore by default
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " don't cache ctrlp
+  let g:ctrlp_use_caching = 0
+endif
+
 " navigate splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
