@@ -48,9 +48,6 @@ if executable('ag')
 
   " use ag in ctrlp for listing files. will respect .gitignore by default
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " don't cache ctrlp
-  let g:ctrlp_use_caching = 0
 endif
 
 " navigate splits with <c-hjkl>
