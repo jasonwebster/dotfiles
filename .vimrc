@@ -67,5 +67,5 @@ nnoremap <Down> :echoe "omg use j"<CR>
 
 if has("gui_running")
   set guioptions=-t
-  set guifont=Menlo\ for\ Powerline:h13
+  set guifont=Menlo\ for\ Powerline:h14
 endif
