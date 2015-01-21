@@ -22,6 +22,7 @@ set noswapfile
 set novisualbell
 set nowritebackup
 set nu
+set smartcase
 set splitbelow
 set splitright
 set title
