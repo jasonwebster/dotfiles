@@ -27,6 +27,9 @@ set splitbelow
 set splitright
 set title
 
+" always show the statusline
+set laststatus=2
+
 " generic indentation
 set expandtab
 set tabstop=2
