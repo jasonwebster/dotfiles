@@ -66,6 +66,10 @@ nnoremap <Right> :echoe "omg use l"<CR>
 nnoremap <Up> :echoe "omg use k"<CR>
 nnoremap <Down> :echoe "omg use j"<CR>
 
+" unmap F1 so I stop opening help all the damn time
+nmap <F1> <nop>
+imap <F1> <nop>
+
 if has("gui_running")
   set guioptions=-t
   set guifont=Menlo\ for\ Powerline:h14
