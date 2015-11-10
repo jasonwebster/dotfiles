@@ -27,6 +27,11 @@ set splitbelow
 set splitright
 set title
 
+" why oh why would anyone want these?
+if exists('+ballooneval')
+  set noballooneval
+endif
+
 " always show the statusline
 set laststatus=2
 
