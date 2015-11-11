@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/yardoc.vim"]
 	path = .vim/bundle/yardoc.vim
 	url = git@github.com:noprompt/vim-yardoc.git
+[submodule ".vim/bundle/ruby.vim"]
+	path = .vim/bundle/ruby.vim
+	url = git://github.com/vim-ruby/vim-ruby.git
