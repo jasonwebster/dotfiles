@@ -31,6 +31,7 @@ set title
 if exists('+ballooneval')
   set noballooneval
 endif
+let g:netrw_nobeval=1
 
 " always show the statusline
 set laststatus=2
