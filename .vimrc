@@ -45,6 +45,8 @@ set nowrap
 set textwidth=80
 set colorcolumn=+1
 
+set formatoptions=tcqrol
+
 " markdown specific
 au BufRead,BufNewFile *.md,*.markdown setlocal textwidth=80 wrap filetype=markdown
 
