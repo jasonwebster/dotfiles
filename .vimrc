@@ -62,6 +62,9 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
+" saner ctrlp buffer behaviour
+let g:ctrlp_switch_buffer = 'et'
+
 " navigate splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
