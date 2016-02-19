@@ -5,6 +5,7 @@ FORMULAE := bash-completion git ruby-build hub
 
 install:
 	cp -Rfv ${SOURCES} ${HOME}
+	rm -rf ~/.rbenv/.git
 
 install-homebrew:
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
