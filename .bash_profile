@@ -1,4 +1,3 @@
-
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # homebrew installed completions
@@ -13,3 +12,5 @@ complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \ || complet
 
 
 export PS1='\u@\h:\W$(__git_ps1 " (%s)") \$ '
+
+shopt -s histappend
