@@ -38,6 +38,7 @@
   topic-log = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
   topic-rebase = "!sh -c 'git rebase -i HEAD~`git topic-log | wc -l | tr -d \" \"`' -"
   push-pull-request = "!sh -c 'git push -u origin `git rev-parse --abbrev-ref HEAD` && hub pull-request'"
+  fixup = !"git commit --fixup=`git log --pretty='%H' $1 | head -1`"
 
 [color]
   ui = auto
