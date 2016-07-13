@@ -11,6 +11,8 @@ complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \ || complet
 # include shell agnostic configuration
 [[ -s "$HOME/.commonrc" ]] && . "$HOME/.commonrc"
 
+# source nvm completions if available
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
 # don't be stupid, bash
 shopt -s histappend
