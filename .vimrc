@@ -85,3 +85,6 @@ if has("gui_running")
   set guioptions=-t
   set guifont=Menlo\ for\ Powerline:h14
 endif
+
+" use powerline symbols
+let g:airline_powerline_fonts = 1
