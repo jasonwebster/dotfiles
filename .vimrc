@@ -69,6 +69,9 @@ let g:ctrlp_switch_buffer = 'et'
 " set working path to nearest ancestor that is a scm checkout
 let g:ctrlp_working_path_mode = 'ra'
 
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
 " navigate splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
