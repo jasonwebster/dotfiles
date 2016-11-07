@@ -18,3 +18,7 @@ complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \ || complet
 shopt -s histappend
 
 export PS1='\u@\h:\W$(__git_ps1 " (%s)") \$ '
+
+# source .bashrc if available. this won't happen on new login shells on mac os
+# by default
+[[ -s "$HOME/.bashrc" ]] && . "$HOME/.bashrc"
