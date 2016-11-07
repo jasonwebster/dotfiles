@@ -96,14 +96,8 @@ endif
 " use powerline symbols
 let g:airline_powerline_fonts = 1
 
-" syntastic configuration
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_enable_balloons = 0
-
-let g:syntastic_ruby_checkers = ["mri", "rubocop"]
-let g:syntastic_javascript_checkers = ["eslint"]
-let g:syntastic_javascript_eslint_exec = 'npm run eslint --'
+" ale config
+let g:ale_lint_on_text_changed = 1
+let g:ale_lint_on_save = 1
+let g:ale_set_loclist = 1
+let g:airline#extensions#ale#enabled = 1
