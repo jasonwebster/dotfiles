@@ -61,6 +61,10 @@ if executable('ag')
 
   " use ag in ctrlp for listing files. will respect .gitignore by default
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " use ag for ack.vim
+  let g:ackprg = 'ag --vimgrep --smart-case'
+  cnoreabbrev Ag Ack
 endif
 
 " saner ctrlp buffer behaviour

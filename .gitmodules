@@ -37,9 +37,6 @@
 [submodule ".vim/bundle/fugitive.vim"]
 	path = .vim/bundle/fugitive.vim
 	url = git@github.com:tpope/vim-fugitive.git
-[submodule ".vim/bundle/ag.vim"]
-	path = .vim/bundle/ag.vim
-	url = git@github.com:rking/ag.vim.git
 [submodule ".vim/bundle/yardoc.vim"]
 	path = .vim/bundle/yardoc.vim
 	url = git@github.com:noprompt/vim-yardoc.git
@@ -55,3 +52,6 @@
 [submodule ".vim/bundle/ale.vim"]
 	path = .vim/bundle/ale.vim
 	url = git@github.com:jasonwebster/ale.git
+[submodule ".vim/bundle/ack.vim"]
+	path = .vim/bundle/ack.vim
+	url = git@github.com:mileszs/ack.vim.git
