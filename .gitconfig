@@ -79,3 +79,6 @@
 
 [diff "exif"]
   textconv = exiftool
+
+[include]
+  path = .gitconfig_local
