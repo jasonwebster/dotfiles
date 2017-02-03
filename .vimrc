@@ -14,12 +14,14 @@ filetype plugin indent on
 
 " reload files changed outside vim automatically (switching branches, etc)
 set autoread
+
+" be quiet
+set noeb vb t_vb=
+
 set backspace=2
 set cursorline
 set nobackup
-set noerrorbells
 set noswapfile
-set novisualbell
 set nowritebackup
 set nu
 set smartcase
