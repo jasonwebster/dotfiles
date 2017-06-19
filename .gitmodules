@@ -55,3 +55,6 @@
 [submodule ".vim/bundle/ack.vim"]
 	path = .vim/bundle/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
+[submodule ".vim/bundle/graphql.vim"]
+	path = .vim/bundle/graphql.vim
+	url = git@github.com:jparise/vim-graphql.git
