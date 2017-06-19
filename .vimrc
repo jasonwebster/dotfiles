@@ -51,7 +51,7 @@ set formatoptions=tcqrol
 
 " markdown specific
 au BufRead,BufNewFile *.md,*.markdown setlocal textwidth=80 wrap filetype=markdown
-let g:markdown_fenced_languages = ['html', 'ruby', 'js=javascript', 'json', 'bash=sh']
+let g:markdown_fenced_languages = ['html', 'ruby', 'js=javascript', 'json', 'bash=sh', 'graphql']
 
 " display extra whitespace
 set list listchars=tab:»·,trail:·
