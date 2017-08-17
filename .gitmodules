@@ -1,6 +1,3 @@
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
@@ -58,3 +55,6 @@
 [submodule ".vim/bundle/graphql.vim"]
 	path = .vim/bundle/graphql.vim
 	url = git@github.com:jparise/vim-graphql.git
+[submodule ".vim/bundle/solarized8.vim"]
+	path = .vim/bundle/solarized8.vim
+	url = git@github.com:lifepillar/vim-solarized8.git

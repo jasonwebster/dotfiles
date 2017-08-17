@@ -8,7 +8,9 @@ call pathogen#infect()
 set t_Co=256
 set background=dark
 syntax on
-colorscheme solarized
+
+let g:solarized_old_cursor_style = 1
+colorscheme solarized8_dark
 
 filetype plugin indent on
 
