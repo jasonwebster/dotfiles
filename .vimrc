@@ -26,6 +26,7 @@ set nobackup
 set noswapfile
 set nowritebackup
 set nu
+set ignorecase
 set smartcase
 set splitbelow
 set splitright
