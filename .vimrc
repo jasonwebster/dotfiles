@@ -60,7 +60,7 @@ set spelllang=en_ca
 """ file type specific configuration
 
 " markdown
-autocmd BufRead,BufNewFile *.md,*.markdown setlocal textwidth=80 wrap filetype=markdown
+autocmd BufRead,BufNewFile *.md,*.markdown setlocal textwidth=80 wrap filetype=markdown spell
 let g:markdown_fenced_languages = ['html', 'ruby', 'js=javascript', 'json', 'bash=sh', 'graphql']
 
 " ruby
