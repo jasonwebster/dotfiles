@@ -32,6 +32,15 @@ set splitbelow
 set splitright
 set title
 
+" relative line numbers only in active buffer
+set number
+set relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * set norelativenumber
+augroup END
+
 " why oh why would anyone want these?
 if exists('+ballooneval')
   set noballooneval
