@@ -74,6 +74,7 @@ let g:markdown_fenced_languages = ['html', 'ruby', 'js=javascript', 'json', 'bas
 
 " ruby
 let g:ruby_indent_assignment_style = 'variable'
+let g:ruby_indent_block_style = 'do'
 
 " git commits
 autocmd FileType gitcommit setlocal spell
