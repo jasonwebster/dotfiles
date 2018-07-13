@@ -23,6 +23,9 @@
 [rerere]
   enabled = 1
 
+[interactive]
+  singleKey = true
+
 [alias]
   br = branch
   ci = commit
