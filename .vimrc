@@ -6,12 +6,12 @@ let mapleader = " "
 
 call pathogen#infect()
 
-set t_Co=256
+set termguicolors
 set background=dark
 syntax on
 
 let g:solarized_old_cursor_style = 1
-colorscheme solarized8_dark
+colorscheme solarized8
 
 filetype plugin indent on
 
