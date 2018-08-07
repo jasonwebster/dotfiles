@@ -13,6 +13,17 @@ syntax on
 let g:solarized_old_cursor_style = 1
 colorscheme solarized8
 
+" reset solarized spell highlights because changing the colour of already syntax
+" highlighted things is rude af. just underlines is good enough thnx.
+hi clear SpellBad
+hi clear SpellLocal
+hi clear SpellCap
+hi clear SpellRare
+hi SpellBad    guibg=NONE guisp=#6c71c4 cterm=NONE,underline gui=NONE,undercurl
+hi SpellCap    guibg=NONE guisp=#6c71c4 cterm=NONE,underline gui=NONE,undercurl
+hi SpellLocal  guibg=NONE guisp=#b58900 cterm=NONE,underline gui=NONE,undercurl
+hi SpellRare   guibg=NONE guisp=#2aa198 cterm=NONE,underline gui=NONE,undercurl
+
 filetype plugin indent on
 
 " reload files changed outside vim automatically (switching branches, etc)
