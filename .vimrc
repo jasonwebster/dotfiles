@@ -129,6 +129,10 @@ nnoremap <Down> :echoe "omg use j"<CR>
 nmap <F1> <nop>
 imap <F1> <nop>
 
+" use C-a in ex mode to jump to beginning of line, like literally every other
+" piece of software in the world
+cnoremap <C-a> <C-b>
+
 if has("gui_running")
   set guioptions=-t
   set guifont=Menlo\ for\ Powerline:h14
