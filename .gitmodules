@@ -58,3 +58,6 @@
 [submodule ".vim/bundle/solarized8.vim"]
 	path = .vim/bundle/solarized8.vim
 	url = git@github.com:lifepillar/vim-solarized8.git
+[submodule ".vim/bundle/typescript.vim"]
+	path = .vim/bundle/typescript.vim
+	url = git@github.com:leafgarland/typescript-vim.git
