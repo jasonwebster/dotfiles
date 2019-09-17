@@ -91,18 +91,20 @@ let g:ruby_indent_block_style = 'do'
 " git commits
 autocmd FileType gitcommit setlocal spell
 
-" the silver searcher
-if executable('ag')
-  " use ag instead of grep
+" setup rg or ag depending on availability
+if executable('rg')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+  let g:ackprg = 'rg --vimgrep --smart-case'
+elseif executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
-
-  " use ag in ctrlp for listing files. will respect .gitignore by default
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " use ag for ack.vim
   let g:ackprg = 'ag --vimgrep --smart-case'
-  cnoreabbrev Ag Ack
 endif
+
+" remap :Ag to :Ack because re-learning finger memory is hard
+cnoreabbrev Ag Ack
 
 " saner ctrlp buffer behaviour
 let g:ctrlp_switch_buffer = 'et'
