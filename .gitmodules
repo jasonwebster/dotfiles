@@ -48,7 +48,7 @@
 	url = git@github.com:tpope/vim-surround.git
 [submodule ".vim/bundle/ale.vim"]
 	path = .vim/bundle/ale.vim
-	url = git@github.com:jasonwebster/ale.git
+	url = git@github.com:dense-analysis/ale.git
 [submodule ".vim/bundle/ack.vim"]
 	path = .vim/bundle/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
