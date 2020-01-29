@@ -153,7 +153,7 @@ let g:ale_set_loclist = 1
 let g:airline#extensions#ale#enabled = 1
 
 let g:ale_linters = {
-\   'ruby:': ['rubocop', 'ruby'],
+\   'ruby': ['rubocop', 'ruby', 'srb'],
 \}
 
 let g:ale_fixers = {
