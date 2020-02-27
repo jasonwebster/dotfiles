@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/typescript.vim"]
 	path = .vim/bundle/typescript.vim
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule ".vim/bundle/shadowenv.vim"]
+	path = .vim/bundle/shadowenv.vim
+	url = git@github.com:Shopify/shadowenv.vim.git
