@@ -5,7 +5,6 @@ alias ll="ls -lh"
 
 alias be="bundle exec"
 alias g="git"
-alias rake="bundle exec rake"
 alias fr="foreman run"
 alias fs="foreman start"
 
