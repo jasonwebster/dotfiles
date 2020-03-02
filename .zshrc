@@ -41,3 +41,5 @@ if [[ -f /opt/dev/dev.sh ]] && [[ $- == *i* ]]; then
 fi
 
 export PATH=".git/safe/../../bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
