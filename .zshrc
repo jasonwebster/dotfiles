@@ -7,8 +7,14 @@ bindkey -e
 
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
+ZSH_CACHE="$HOME/.zsh/comp-cache-${ZSH_VERSION}"
+mkdir -p $ZSH_CACHE
+chmod 700 $ZSH_CACHE
+
 autoload -Uz compinit
-compinit
+compinit -d "$ZSH_CACHE/zcompdump"
+zstyle ':completion::complete:*' use-cache 1
+zstyle ':completion::complete:*' cache-path $ZSH_CACHE
 
 # enable autocomplete for g git alias
 compdef g='git'
