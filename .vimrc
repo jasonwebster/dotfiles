@@ -91,6 +91,9 @@ let g:ruby_indent_block_style = 'do'
 " git commits
 autocmd FileType gitcommit setlocal spell
 
+" git pull requests
+autocmd BufRead,BufNewFile PULLREQ_EDITMSG setlocal textwidth=80 wrap linebreak formatoptions-=t filetype=gitcommit spell
+
 " setup rg or ag depending on availability
 if executable('rg')
   set grepprg=rg\ --color=never
