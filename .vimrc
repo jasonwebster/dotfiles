@@ -140,7 +140,7 @@ cnoremap <C-a> <C-b>
 
 if has("gui_running")
   set guioptions=-t
-  set guifont=Menlo\ for\ Powerline:h14
+  set guifont=MenloForPowerline-Regular:h14
 endif
 
 " use powerline symbols
