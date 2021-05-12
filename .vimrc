@@ -154,6 +154,7 @@ let g:ale_lint_on_insert_leave = 1
 let g:ale_lint_on_save = 1
 let g:ale_set_loclist = 1
 let g:airline#extensions#ale#enabled = 1
+let g:ale_set_balloons = 0
 
 let g:ale_linters = {
 \   'ruby': ['rubocop', 'ruby', 'srb'],
