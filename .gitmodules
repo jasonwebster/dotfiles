@@ -64,3 +64,6 @@
 [submodule ".vim/bundle/shadowenv.vim"]
 	path = .vim/bundle/shadowenv.vim
 	url = git@github.com:Shopify/shadowenv.vim.git
+[submodule ".vim/bundle/fzf.vim"]
+	path = .vim/bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
