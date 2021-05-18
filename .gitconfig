@@ -27,6 +27,7 @@
   singleKey = true
 
 [alias]
+  s = switch
   br = branch
   ci = commit
   co = checkout
