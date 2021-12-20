@@ -7,6 +7,10 @@
 [core]
   excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes_global
+  commitGraph = true
+
+[init]
+  defaultBranch = main
 
 [branch]
   autosetuprebase = always
@@ -26,6 +30,9 @@
 [interactive]
   singleKey = true
 
+[gc]
+  writeCommitGraph = true
+
 [alias]
   s = switch
   br = branch
@@ -36,6 +43,7 @@
   st = status
   ls = log --oneline --decorate
   ll = log --oneline --graph --decorate
+  main = !"git symbolic-ref refs/remotes/origin/HEAD | cut -d'/' -f4"
   whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
   prune-locals = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
   topic-log = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
@@ -80,6 +88,9 @@
 
 [url "git@heroku.com:"]
   insteadOf = "heroku:"
+
+[diff]
+  algorithm = patience
 
 [diff "exif"]
   textconv = exiftool
