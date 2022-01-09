@@ -1,6 +1,6 @@
 set nocompatible
 
-" space leader master race?
+" space leader
 noremap <Space> <Nop>
 let mapleader = " "
 
