@@ -1,7 +1,8 @@
 EXCLUDES := . .. .git Makefile
 SOURCES := $(filter-out $(EXCLUDES), $(shell \ls -a .))
 
-FORMULAE := bash-completion git ruby-build hub
+HOMEBREW_FORMULAE := git ripgrep ruby-build hub
+APT_PACKAGES := ripgrep fzf hub
 
 install:
 	cp -Rfv ${SOURCES} ${HOME}
@@ -17,7 +18,8 @@ install-rbenv:
 install-nvm:
 	git clone git@github.com:creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 
-install-formulae:
-	brew install $(FORMULAE)
-# link up homebrew bash completion
-	ln -s "/usr/local/Library/Contributions/brew_bash_completion.sh" "/usr/local/etc/bash_completion.d"
+install-formulae: install-homebrew
+	brew install $(HOMEBREW_FORMULAE)
+
+install-apt-packages:
+	apt-get install -y $(APT_PACKAGES)
