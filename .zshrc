@@ -38,7 +38,7 @@ setopt PROMPT_SUBST
 PROMPT='%n@%m:${PWD/#$HOME/~}${vcs_info_msg_0_} \$ '
 
 # include shell agnostic configuration
-[[ -s "$HOME/.commonrc" ]] && . "$HOME/.commonrc"
+[[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
 
 # load dev, but only if present and the shell is interactive
 if [[ -f /opt/dev/dev.sh ]] && [[ $- == *i* ]]; then
