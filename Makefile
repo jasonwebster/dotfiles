@@ -11,12 +11,10 @@ install:
 install-homebrew:
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-install-rbenv:
-	git clone git@github.com:rbenv/rbenv.git ~/.rbenv
-	cd ~/.rbenv && src/configure && make -C src
-
-install-nvm:
-	git clone git@github.com:creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
+install-asdf:
+	asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+	asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+	asdf plugin-add deno https://github.com/asdf-community/asdf-deno.git
 
 install-formulae: install-homebrew
 	brew install $(HOMEBREW_FORMULAE)
