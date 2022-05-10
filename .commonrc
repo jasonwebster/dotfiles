@@ -2,6 +2,10 @@ if [ -f ~/.env ]; then
   source ~/.env
 fi
 
+if [[ "$OSTYPE" == "darwin"* ]] && [ -f ~/.macos ]; then
+  source ~/.macoS
+fi
+
 if [ -f ~/.aliases ]; then
   source ~/.aliases
 fi
