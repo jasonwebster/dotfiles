@@ -2,7 +2,7 @@ EXCLUDES := . .. .git Makefile
 SOURCES := $(filter-out $(EXCLUDES), $(shell \ls -a .))
 
 HOMEBREW_FORMULAE := git ripgrep fzf asdf ruby-build hub jq
-APT_PACKAGES := ripgrep fzf hub
+APT_PACKAGES := ripgrep fzf hub jq
 
 install:
 	cp -Rfv ${SOURCES} ${HOME}
