@@ -1,7 +1,7 @@
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # source homebrew installed completions
-if [ -f `brew --prefix`/etc/bash_completion ]; then
+if [ type "brew" &> /dev/null ] && [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 

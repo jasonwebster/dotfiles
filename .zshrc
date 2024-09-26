@@ -11,8 +11,7 @@ ZSH_CACHE="$HOME/.zsh/comp-cache-${ZSH_VERSION}"
 mkdir -p $ZSH_CACHE
 chmod 700 $ZSH_CACHE
 
-if type brew &>/dev/null
-then
+if type "brew" &> /dev/null; then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 fi
 
