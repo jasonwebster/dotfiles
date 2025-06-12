@@ -39,7 +39,7 @@
 	url = git@github.com:noprompt/vim-yardoc.git
 [submodule ".vim/bundle/ruby.vim"]
 	path = .vim/bundle/ruby.vim
-	url = git://github.com/vim-ruby/vim-ruby.git
+	url = git@github.com:vim-ruby/vim-ruby.git
 [submodule ".vim/bundle/rhubarb.vim"]
 	path = .vim/bundle/rhubarb.vim
 	url = git@github.com:tpope/vim-rhubarb.git
