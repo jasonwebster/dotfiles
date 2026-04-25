@@ -5,7 +5,7 @@ unsetopt beep
 
 bindkey -e
 
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 ZSH_CACHE="$HOME/.zsh/comp-cache-${ZSH_VERSION}"
 mkdir -p $ZSH_CACHE
