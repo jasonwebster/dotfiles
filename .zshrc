@@ -39,6 +39,8 @@ PROMPT='%n@%m:${PWD/#$HOME/~}${vcs_info_msg_0_} \$ '
 # include shell agnostic configuration
 [[ -s "$HOME/.commonrc" ]] && source "$HOME/.commonrc"
 
+eval "$(shadowenv init zsh)"
+
 # load dev, but only if present and the shell is interactive
 if [[ -f /opt/dev/dev.sh ]] && [[ $- == *i* ]]; then
   source /opt/dev/dev.sh
