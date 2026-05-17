@@ -6,6 +6,7 @@ unsetopt beep
 bindkey -e
 
 export PATH="$HOME/.local/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 ZSH_CACHE="$HOME/.zsh/comp-cache-${ZSH_VERSION}"
 mkdir -p $ZSH_CACHE
@@ -15,6 +16,8 @@ if type "brew" &> /dev/null; then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
   FPATH="$(brew --prefix)/share/zsh-completions:${FPATH}"
 fi
+
+FPATH="${ASDF_DATA_DIR:-$HOME/.asdf}/completions:${FPATH}"
 
 autoload -Uz compinit
 compinit -d "$ZSH_CACHE/zcompdump"
