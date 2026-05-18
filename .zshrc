@@ -21,8 +21,11 @@ FPATH="${ASDF_DATA_DIR:-$HOME/.asdf}/completions:${FPATH}"
 
 autoload -Uz compinit
 compinit -d "$ZSH_CACHE/zcompdump"
+
 zstyle ':completion::complete:*' use-cache 1
 zstyle ':completion::complete:*' cache-path $ZSH_CACHE
+# case insensitive matching if no literal match first
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
 # enable autocomplete for g git alias
 compdef g='git'
