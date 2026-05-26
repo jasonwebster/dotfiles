@@ -73,3 +73,6 @@
 [submodule ".vim/bundle/pine-script.vim"]
 	path = .vim/bundle/pine-script.vim
 	url = https://github.com/jbmorgado/vim-pine-script.git
+[submodule ".vim/bundle/ledger.vim"]
+	path = .vim/bundle/ledger.vim
+	url = https://github.com/ledger/vim-ledger.git
